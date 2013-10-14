@@ -22,11 +22,14 @@ def symlink_dotfiles(files_to_symlink):
         symlink = symlink_path % filename
 
         if os.path.exists(symlink):
-            if not backup_folder_created:
-                create_backup_folder(backup_folder)
-                backup_folder_created = True
-            print("Backing up old %s" % filename)
-            os.rename(symlink, os.path.sep.join([backup_folder,filename]))
+            if os.path.islink(symlink):
+                os.remove(symlink)
+            else:
+                if not backup_folder_created:
+                    create_backup_folder(backup_folder)
+                    backup_folder_created = True
+                print("Backing up old %s" % filename)
+                os.rename(symlink, os.path.sep.join([backup_folder,filename]))
 
         print("Creating symlink for %s" % filename)
         os.symlink(source , symlink)
