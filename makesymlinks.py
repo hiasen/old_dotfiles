@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*- 
 # Script for symlinking in dotfiles-repo
 # Øystein Hiåsen
 
