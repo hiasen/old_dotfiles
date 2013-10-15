@@ -29,7 +29,7 @@ def symlink_dotfiles(files_to_symlink):
                     create_backup_folder(backup_folder)
                     backup_folder_created = True
                 print("Backing up old %s" % filename)
-                os.rename(symlink, os.path.sep.join([backup_folder,filename]))
+                os.rename(symlink, os.path.join(backup_folder, filename))
 
         print("Creating symlink for %s" % filename)
         os.symlink(source , symlink)
