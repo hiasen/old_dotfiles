@@ -2,6 +2,8 @@
 	name = Øystein Hiåsen
 	email = oystein.hiaasen@gmail.com
 [push]
-	default = simple # push only current branch
+	default = nothing
 [credential]
 	helper = cache # cache credentials
+[core]
+	editor = vim
