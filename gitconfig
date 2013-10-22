@@ -7,3 +7,4 @@
 	helper = cache # cache credentials
 [core]
 	editor = vim
+	excludesfile = /home/hiasen/.gitignore_global

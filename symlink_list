@@ -2,4 +2,5 @@ vimrc
 vim
 tmux.conf
 gitconfig
+gitignore_global
 zshrc

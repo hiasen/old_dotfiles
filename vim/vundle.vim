@@ -6,6 +6,13 @@ filetype off                   " required!
  " let Vundle manage Vundle
  Bundle 'gmarik/vundle'
 
+ Bundle 'scrooloose/nerdtree'
+
+"Python plugins
+ Bundle 'ivanov/vim-ipython'
+ Bundle 'klen/python-mode'
+
+"Latex
  Bundle 'http://git.code.sf.net/p/vim-latex/vim-latex'
 
  filetype plugin indent on     " required!
