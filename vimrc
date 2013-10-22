@@ -2,6 +2,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Run vundle from config in dotfiles repo
+runtime source vundle.vim
+
 autocmd!
 " Clear any existing autocommands...
 

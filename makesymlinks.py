@@ -5,7 +5,6 @@
 
 import os
 import datetime
-files_to_symlink = ['vimrc', 'gitconfig', 'tmux.conf']
 
 home_folder = os.path.expanduser('~') 
 dotfiles_repo = os.path.join(home_folder, ".dotfiles") 
@@ -51,5 +50,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         symlink_dotfiles(sys.argv[1:])
     else:
+        f = open(os.path.join(dotfiles_repo, 'symlink_list'), 'r')
+        files_to_symlink = [x.strip() for x in f]
         symlink_dotfiles(files_to_symlink)
 
