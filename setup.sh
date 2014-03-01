@@ -7,7 +7,7 @@ then
     echo "Oh my zsh is already installed"
 else
     echo "Cloning oh-my-zsh-repo"
-    git clone https://github.com/hiasen/oh-my-zsh.git ~/.oh-my-zsh
+    git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
 if [ -d ~/.dotfiles/vim/bundle/vundle ]
