@@ -49,5 +49,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias dotfiles_pull='git --git-dir ~/.dotfiles/.git pull'
 
-PATH=$PATH:$HOME/.bin
+PATH=$PATH:$HOME/.bin:$HOME/.scripts
 set -o vi
