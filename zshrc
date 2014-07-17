@@ -5,7 +5,7 @@ ZSH_CUSTOM=$HOME/.zsh_custom
 
 export UPDATE_ZSH_DAYS=60
 COMPLETION_WAITING_DOTS="true"
-plugins=(git pip sudo systemd virtualenvwrapper)
+plugins=(git pip sudo systemd)
 
 source $ZSH/oh-my-zsh.sh
 

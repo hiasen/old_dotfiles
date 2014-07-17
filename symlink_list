@@ -4,5 +4,4 @@ tmux.conf
 gitconfig
 gitignore_global
 zshrc
-config/htop/htoprc
 zsh_custom

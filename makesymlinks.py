@@ -38,7 +38,7 @@ class DotfileSymlinker(object):
             try:
                 os.makedirs(os.path.join(self.home_folder, ".{}".format(folder)))
                 print("Created parent folder: .{}".format(folder))
-            except FileExistsError:
+            except :
                 pass
 
         print("Symlinking {} -> {}".format(symlink, source))
