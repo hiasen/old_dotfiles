@@ -16,11 +16,5 @@ ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
 
-function sudo_is_active {
-    sudo -n echo "sudo on" 2>/dev/zero
-}
-
-local sudo_status='$(sudo_is_active)'
-
 PROMPT="${user} ${pwd}$ "
-RPROMPT="${sudo_status} ${return_code} ${git_branch}"
+RPROMPT="${return_code} ${git_branch}"
