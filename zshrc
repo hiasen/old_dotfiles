@@ -10,6 +10,8 @@ plugins=(git pip sudo systemd)
 source $ZSH/oh-my-zsh.sh
 
 alias dotfiles_pull='git --git-dir ~/.dotfiles/.git pull'
+alias mv='mv -i'
+alias cp='cp -i'
 
 PATH=$PATH:$HOME/.bin:$HOME/.scripts
-EDITOR=vim
+export EDITOR=vim

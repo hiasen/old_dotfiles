@@ -8,11 +8,6 @@ filetype off                   " required!
 
  Bundle 'scrooloose/nerdtree'
 
-"Python plugins
- Bundle 'ivanov/vim-ipython'
- Bundle 'klen/python-mode'
-
-"Latex
- Bundle 'http://git.code.sf.net/p/vim-latex/vim-latex'
+ Bundle 'altercation/vim-colors-solarized'
 
  filetype plugin indent on     " required!

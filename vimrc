@@ -65,7 +65,8 @@ set hlsearch          "Highlight all mathces from search
 set nowrap            "Don't wrap lines
 set linebreak         "Wrap lines at convenient points
 
-colorscheme ron
+set background=dark
+colorscheme solarized
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
