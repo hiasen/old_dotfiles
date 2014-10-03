@@ -13,3 +13,6 @@
 	unstage = reset HEAD --
 	st = status
 	s = status
+    b = branch -vv
+    ba = branch -avv
+

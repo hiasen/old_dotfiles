@@ -42,6 +42,7 @@ class DotfileSymlinker(object):
                 pass
 
         print("Symlinking {} -> {}".format(symlink, source))
+        os.remove(symlink)
         os.symlink(source , symlink)
 
     def backup_file(self, filename):
