@@ -8,6 +8,4 @@ filetype off                   " required!
 
  Bundle 'scrooloose/nerdtree'
 
- Bundle 'altercation/vim-colors-solarized'
-
  filetype plugin indent on     " required!

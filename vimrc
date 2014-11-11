@@ -66,7 +66,7 @@ set nowrap            "Don't wrap lines
 set linebreak         "Wrap lines at convenient points
 
 set background=dark
-colorscheme solarized
+colorscheme darkblue
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·

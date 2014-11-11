@@ -15,4 +15,7 @@
 	s = status
     b = branch -vv
     ba = branch -avv
+    d = diff
+    ds = diff --staged
+    dc = diff --cached
 

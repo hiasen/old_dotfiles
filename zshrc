@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 alias dotfiles_pull='git --git-dir ~/.dotfiles/.git pull'
 alias mv='mv -i'
 alias cp='cp -i'
+alias pn='ping ntnu.no'
 
 PATH=$PATH:$HOME/.bin:$HOME/.scripts
 export EDITOR=vim
