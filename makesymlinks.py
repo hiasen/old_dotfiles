@@ -28,11 +28,11 @@ class DotfileSymlinker(object):
         source = os.path.join(self.dotfiles_repo, "{}".format(path))
         symlink = os.path.join(self.home_folder, ".{}".format(path))
 
-        if os.path.exists(symlink):
-            if os.path.islink(symlink):
-                os.remove(symlink)
-            else:
-                self.backup_file(symlink)
+        self.remove_if_symlink(symlink)
+        try:
+            self.backup_file(symlink)
+        except:
+            pass
 
         if folder:
             try:
@@ -42,10 +42,15 @@ class DotfileSymlinker(object):
                 pass
 
         print("Symlinking {} -> {}".format(symlink, source))
-        os.remove(symlink)
         os.symlink(source , symlink)
 
+    def remove_if_symlink(self, filename):
+        if os.path.exists(filename) and os.path.islink(filename):
+            os.remove(filename)
+
     def backup_file(self, filename):
+        if not os.path.exists(filename):
+            return
         if not self.backup_folder_created:
             self.create_backup_folder()
         print("Backing up old %s" % filename)
